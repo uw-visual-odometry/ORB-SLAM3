@@ -89,6 +89,9 @@ KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
         mbHasVelocity = true;
     }
 
+    cout << "please at lease print sth!!!!!!!" << endl;
+    cout << mVw << endl;
+
     mImuBias = F.mImuBias;
     SetPose(F.GetPose());
 
@@ -177,6 +180,8 @@ Eigen::Vector3f KeyFrame::GetTranslation()
 Eigen::Vector3f KeyFrame::GetVelocity()
 {
     unique_lock<mutex> lock(mMutexPose);
+    cout << "please at lease print sth!!!!!!!" << endl;
+    cout << mVw << endl;
     return mVw;
 }
 

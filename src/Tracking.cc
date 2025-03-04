@@ -2295,8 +2295,6 @@ void Tracking::Track()
     }
 
 
-
-
     if(mState==OK || mState==RECENTLY_LOST)
     {
         // Store frame pose information to retrieve the complete camera trajectory afterwards.
@@ -2870,7 +2868,7 @@ bool Tracking::TrackWithMotionModel()
         mCurrentFrame.SetPose(mVelocity * mLastFrame.GetPose());
     }
 
-
+    
 
 
     fill(mCurrentFrame.mvpMapPoints.begin(),mCurrentFrame.mvpMapPoints.end(),static_cast<MapPoint*>(NULL));

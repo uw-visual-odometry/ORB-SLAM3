@@ -19,7 +19,7 @@
 
 #ifndef SYSTEM_H
 #define SYSTEM_H
-
+#include <unistd.h>
 
 #include <unistd.h>
 #include<stdio.h>
