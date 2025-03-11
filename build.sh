@@ -15,6 +15,10 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
 
+echo ""
+echo "Finish configuring and building Thirdparty/g2o ..."
+echo ""
+
 cd ../../Sophus
 
 echo "Configuring and building Thirdparty/Sophus ..."
@@ -23,6 +27,10 @@ mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
+
+echo ""
+echo "Finish configuring and building Thirdparty/Sophus ..."
+echo ""
 
 cd ../../../
 
